@@ -37,7 +37,7 @@ services:
     ports:
       - 3306:3306      
     stdin_open: true
-    command: ["cargo", "r", "--release", "--bin", "noria-server", "--", "--deployment", "myapp", "--no-reuse", "--shards", "2", "-z", zoo1:2121],
+    command: ["cargo", "r", "--release", "--bin", "noria-server", "--", "--deployment", "myapp", "--no-reuse", "--shards", "2", "-z", zoo1:2121]
     depends_on:
       - zoo1
       - zoo2
